@@ -8,7 +8,7 @@ public class DefaultProperties {
     private List<Villa> villaList= new ArrayList<>();
     private List<SummerHouse> summerHouseList= new ArrayList<>();
     private House h1= new House("Ev",120,3,1,2123123);
-    private House h2= new House("Ev",100,2,1,3123132);
+    private House h2= new House("Ev",100,1,1,3123132);
     private House h3= new House("Ev",110,2,1,4123123);
     private Villa v1= new Villa("Villa",312,3,2,624124);
     private Villa v2= new Villa("Villa",412,4,2,824124);

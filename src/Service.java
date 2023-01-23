@@ -88,7 +88,24 @@ public class Service {
         return avgOfAllMsquares;
 
  }
+    public List<String> getFilteredList(int numberOfRooms, int numberOfHall){
+        List<String> filteredProperties = new ArrayList<>();
+        houseList.
+                stream().
+                filter(house -> house.getNumberOfRooms()== numberOfRooms && house.getNumberOfHall() == numberOfHall).
+                map(House::toString).
+                forEach(filteredProperties::add);
 
-
-
+        villaList.
+                stream().
+                filter(house -> house.getNumberOfRooms()== numberOfRooms && house.getNumberOfHall() == numberOfHall).
+                map(Villa::toString).
+                forEach(filteredProperties::add);
+        summerHouseList.
+                stream().
+                filter(house -> house.getNumberOfRooms()== numberOfRooms && house.getNumberOfHall() == numberOfHall).
+                map(SummerHouse::toString).
+                forEach(filteredProperties::add);
+        return filteredProperties;
+    }
 }
