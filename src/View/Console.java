@@ -1,3 +1,7 @@
+package View;
+
+import Service.Service;
+
 import java.util.Scanner;
 
 public class Console {

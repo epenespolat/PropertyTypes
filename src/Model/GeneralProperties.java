@@ -1,8 +1,11 @@
+package Model;
+
 public class GeneralProperties {
     /*
     tip ==> ev, villa, yazlık
     fiyat
     metrekare
+    oda ve salon sayıları
      */
     private String type;
     private int mSquare;
